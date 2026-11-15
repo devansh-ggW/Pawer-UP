@@ -151,7 +151,7 @@
       "Playtime": "Explore toys and play essentials.",
       "A bit of everything": "Browse all four PawerUP collections."
     };
-    finderResult.textContent = suggestions[interest] || "Choose a few details to get started.";
+    finderResult.textContent = "For your " + data.get("age").toLowerCase() + " " + data.get("size").toLowerCase() + " dog: " + (suggestions[interest] || "browse the collections to get started.");
   });
 
   $("#newsletterForm").addEventListener("submit", event => {
